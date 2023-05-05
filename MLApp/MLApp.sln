@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLApp", "MLApp.csproj", "{D00BE91D-5F85-461D-A588-4231790348BE}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "frontend", "..\..\csit341-final-project-pull-stuck-dev\frontend\frontend.esproj", "{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF197A90-8E93-424C-B1A8-8B607EC5BC3A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
