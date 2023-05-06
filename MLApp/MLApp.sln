@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLApp", "MLApp.csproj", "{D00BE91D-5F85-461D-A588-4231790348BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLForm", "..\MLForm\MLForm.csproj", "{F1FD997B-BAE8-408D-9340-7571000C621D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D00BE91D-5F85-461D-A588-4231790348BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1FD997B-BAE8-408D-9340-7571000C621D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1FD997B-BAE8-408D-9340-7571000C621D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1FD997B-BAE8-408D-9340-7571000C621D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1FD997B-BAE8-408D-9340-7571000C621D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
