@@ -4,7 +4,7 @@
   "DataSource": {
     "Type": "Folder",
     "Version": 1,
-    "FolderPath": "D:\\Projects_C#\\Cocunot-Pest-Identifier\\Coconut Leaf Images"
+    "FolderPath": "D:\\Projects_C#\\Coconut-Pest-Identifier\\Coconut Leaf Images"
   },
   "Environment": {
     "Type": "LocalCPU",

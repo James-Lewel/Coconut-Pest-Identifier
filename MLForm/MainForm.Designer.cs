@@ -34,10 +34,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.informationLabel = new System.Windows.Forms.Label();
             this.uploadButton = new System.Windows.Forms.Button();
-            this.resetButton = new System.Windows.Forms.Button();
+            this.screenshotButton = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
             this.cameraDisplay = new System.Windows.Forms.PictureBox();
+            this.resetButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
@@ -60,8 +61,10 @@
             this.splitContainer.Panel1.Controls.Add(this.informationLabel);
             this.splitContainer.Panel1.Controls.Add(this.uploadButton);
             this.splitContainer.Panel1.Controls.Add(this.resetButton);
+            this.splitContainer.Panel1.Controls.Add(this.screenshotButton);
             this.splitContainer.Panel1.Controls.Add(this.stopButton);
             this.splitContainer.Panel1.Controls.Add(this.startButton);
+            this.splitContainer.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer_Panel1_Paint);
             // 
             // splitContainer.Panel2
             // 
@@ -73,7 +76,7 @@
             // cameraComboBox
             // 
             this.cameraComboBox.FormattingEnabled = true;
-            this.cameraComboBox.Location = new System.Drawing.Point(3, 215);
+            this.cameraComboBox.Location = new System.Drawing.Point(2, 263);
             this.cameraComboBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cameraComboBox.Name = "cameraComboBox";
             this.cameraComboBox.Size = new System.Drawing.Size(182, 28);
@@ -94,7 +97,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(5, 185);
+            this.label1.Location = new System.Drawing.Point(4, 233);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 20);
             this.label1.TabIndex = 3;
@@ -104,7 +107,7 @@
             // 
             this.informationLabel.AutoSize = true;
             this.informationLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.informationLabel.Location = new System.Drawing.Point(5, 306);
+            this.informationLabel.Location = new System.Drawing.Point(4, 354);
             this.informationLabel.MaximumSize = new System.Drawing.Size(179, 0);
             this.informationLabel.Name = "informationLabel";
             this.informationLabel.Size = new System.Drawing.Size(98, 20);
@@ -114,7 +117,7 @@
             // uploadButton
             // 
             this.uploadButton.BackColor = System.Drawing.SystemColors.Control;
-            this.uploadButton.Location = new System.Drawing.Point(3, 252);
+            this.uploadButton.Location = new System.Drawing.Point(2, 300);
             this.uploadButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uploadButton.Name = "uploadButton";
             this.uploadButton.Size = new System.Drawing.Size(182, 38);
@@ -123,17 +126,17 @@
             this.uploadButton.UseVisualStyleBackColor = false;
             this.uploadButton.Click += new System.EventHandler(this.uploadButton_Click);
             // 
-            // resetButton
+            // screenshotButton
             // 
-            this.resetButton.BackColor = System.Drawing.SystemColors.Control;
-            this.resetButton.Location = new System.Drawing.Point(3, 131);
-            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(182, 38);
-            this.resetButton.TabIndex = 1;
-            this.resetButton.Text = "Reset";
-            this.resetButton.UseVisualStyleBackColor = false;
-            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            this.screenshotButton.BackColor = System.Drawing.SystemColors.Control;
+            this.screenshotButton.Location = new System.Drawing.Point(3, 131);
+            this.screenshotButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.screenshotButton.Name = "screenshotButton";
+            this.screenshotButton.Size = new System.Drawing.Size(182, 38);
+            this.screenshotButton.TabIndex = 1;
+            this.screenshotButton.Text = "Screenshot";
+            this.screenshotButton.UseVisualStyleBackColor = false;
+            this.screenshotButton.Click += new System.EventHandler(this.screenshotButton_Click);
             // 
             // stopButton
             // 
@@ -169,6 +172,18 @@
             this.cameraDisplay.TabIndex = 0;
             this.cameraDisplay.TabStop = false;
             // 
+            // resetButton
+            // 
+            this.resetButton.BackColor = System.Drawing.SystemColors.Control;
+            this.resetButton.Location = new System.Drawing.Point(3, 177);
+            this.resetButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(182, 38);
+            this.resetButton.TabIndex = 1;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = false;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -203,6 +218,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button uploadButton;
+        private System.Windows.Forms.Button screenshotButton;
         private System.Windows.Forms.Button resetButton;
     }
 }
